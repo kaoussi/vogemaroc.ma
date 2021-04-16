@@ -1,0 +1,8 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:kaoussi/vogemorocco.git",
+  "author": "Souhail Kaoussi <59916886+souhailkaoussi-pro@users.noreply.github.com>",
+  "license": "MIT"
+}

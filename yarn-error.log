@@ -1,0 +1,36 @@
+Arguments: 
+  /Users/q/.nvm/versions/node/v10.19.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js init
+
+PATH: 
+  /usr/local/opt/mysql@5.7/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/opt/mysql@5.7/bin:/Users/q/.sdkman/candidates/springboot/current/bin:/usr/local/opt/python@2/libexec/bin:/Users/q/.local/bin:/usr/local/sbin:/Users/q/.composer/vendor/bin:/Users/q/.yarn-global/node_modules/.bin:/Users/q/.yarn/bin:/Users/q/flutter/bin:/Users/q/Projects/clients/voge/voge-production/flutter/bin:/Users/q/.nvm/versions/node/v10.19.0/bin:/Users/q/.rbenv/shims:/Users/q/.rbenv/bin:/usr/local/opt/mysql@5.7/bin:/Users/q/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/q/go/bin:/Users/q/Library/Android/sdk/tools:/Users/q/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.19.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:137008:13)
+      at Interface.emit (events.js:198:13)
+      at Interface._ttyWrite (readline.js:801:16)
+      at ReadStream.onkeypress (readline.js:184:10)
+      at ReadStream.emit (events.js:198:13)
+      at emitKeys (internal/readline.js:424:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1073:36)
+      at ReadStream.emit (events.js:198:13)
+      at addChunk (_stream_readable.js:288:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

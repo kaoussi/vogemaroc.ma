@@ -1,0 +1,379 @@
+/*---------------------------------*/
+/*            Structure            */
+/*---------------------------------*/
+
+/* cambios responsive */
+div.contenedor.venta {
+    margin-top: 110px;
+}
+
+
+div.container-venta{
+    background-color:#0d253e; 
+    padding: 30% 2%;
+}
+div.container-venta h2.section-heading{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+div.container-venta h2.section-heading span.thetitle{
+    color: #857647;
+}
+.srp-dealers-innerrow.inputs-cont {
+    padding: 0 20px;
+}
+.srp-dealers-innerrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+/*---------------------------------*/
+/*             Inputs              */
+/*---------------------------------*/
+
+.dealers p.input-wrapper {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: inherit;    
+    margin: 5px;
+}
+.dealers p.input-wrapper input, .dealers p.input-wrapper select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 100%;
+    border : none;
+    border-radius: 0px;
+    padding: 3px 10px;
+    height: 40px;
+    color: #bbbbbb;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    outline: unset;
+    background-color: initial;
+    border: 2px solid #bbbbbb;
+    transition: .3s ease;
+}
+
+.dealers p.input-wrapper input::placeholder, .dealers p.input-wrapper select::placeholder {
+    color: #bbbbbb;
+}
+
+.dealers p.input-wrapper input:focus, .dealers p.input-wrapper select:focus {
+    border: 2px solid #222222;
+    color: #222222;
+}
+
+.dealers p.input-wrapper input:focus::placeholder, .dealers p.input-wrapper select:focus::placeholder {
+    color: #222222;
+}
+
+
+.dealer-search::after{
+    content:'';
+    background-image:  url("../img/lupa.svg");
+    background-repeat: no-repeat; 
+    width: 30px;
+    height: 30px;   
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+select#busqueda_provincia{
+    color: #bbbbbb;
+    background-image: url(../img/bajo.svg);
+    background-color: initial;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 55%;
+    background-size: 25px;
+    border: 2px solid #bbbbbb;
+}
+/*---------------------------------*/
+/*          Dealers list           */
+/*---------------------------------*/
+
+.srp-dealerslist-cont {
+    width: 100%;
+}
+ul.srp-dealerlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 600px;
+    padding: 5%;
+    position: relative;
+    background-color: #efefef;
+}
+.dealerinfo h3 {
+    font-size: 18px;
+    position: relative;
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    margin-top: 5px;
+    color: #222222;
+    font-weight: initial;
+    font-weight: 500;
+}
+.dealerinfo h3::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #429ddb;
+}
+.dealerinfo p.address {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+    color: #222222;
+    font-weight: initial;
+}
+.dealerinfo p.telf,
+.dealerinfo p.telm,
+.dealerinfo p.fax,
+.dealerinfo p.website,
+.dealerinfo p.facebook,
+.dealerinfo p.googleplus,
+.dealerinfo p.twitter,
+.dealerinfo p.email {
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: #222222;
+}
+.dealerinfo a{
+    color: #222222;
+}
+.dealerinfo i{
+    font-size: 20px;
+}
+.dealerinfo .redes-sociales{
+    display: block;
+}
+.dealerinfo .redes-sociales p{
+    display: inline-block;
+    width: 15%;
+}
+.dealerinfo p.address {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+    color: #222222;
+}
+li.srp-dealeritem > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 25px 40px 0;
+}
+.dealerinfo {
+    width: 60%;
+}
+.dealerimg {
+    width: 40%;
+}
+.dealerimg figure {
+    margin: 0;
+    border: 1px solid #c1c1c1;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+}
+.dealerimg figure img{
+    width: 100%;
+}
+/*---------------------------------*/
+/*           Map section           */
+/*---------------------------------*/
+
+.srp-dealermap {
+    width: 100%;
+    display: none;
+}
+div#map {
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+}
+
+/* Scroll bar */
+.srp-dealerlist::-webkit-scrollbar {
+    width: 6px;
+    background-color: #9e9e9e;
+    /* background-color: #222222; */
+}
+.srp-dealerlist::-webkit-scrollbar-thumb {
+    background-color: #429ddb;
+    /* background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); */
+}
+.srp-dealerlist::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    background-color: #9e9e9e;
+}
+li.srp-dealeritem {
+    /* padding: 0 25px; */
+    cursor: pointer;
+}
+
+/*---------------------------------*/
+/*           Responsive            */
+/*---------------------------------*/
+
+@media screen and (min-width: 768px) {
+    .dealerimg {
+        width: auto;
+        margin-right: 10px;
+    }
+    .srp-dealermap {
+        display: block;
+    }
+    div.container-venta{
+        padding: 10% 0;
+    }
+    .dealers p.input-wrapper input, .dealers p.input-wrapper select{
+        padding-left: 20px;
+    }
+    .srp-dealerslist-cont {
+        border: 1px solid #c1c1c1;
+    }
+    ul.srp-dealerlist {
+        padding: 2% 5%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div.contenedor.venta{
+        margin-top: 150px;
+    }
+    .srp-dealers-innerrow.inputs-cont {
+        padding: 0 80px;
+    }
+    .srp-dealers-innerrow {
+        padding: 0 80px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    div.contenedor.venta{
+        margin-top: 0;
+    }
+    .inputs-cont {
+        padding: 0 80px;
+    }
+    .franja-nav {
+        height: 60px;
+        background-color: #353435;
+    }
+    div.container-venta{
+        padding: 7% 0;
+     }
+    .dealers p.input-wrapper {
+        width: 32%;  
+        margin: 25px 0px;
+    }
+    .srp-dealerslist-cont {
+        width: 100%;
+        margin: 0 80px;
+    }
+    .srp-dealermap {
+        width: 100%;
+        padding: 0 80px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .srp-dealers-maincont {
+        margin-top: 100px;
+    }
+    .srp-dealerslist-cont {
+        width: 76%;
+        margin: 0 auto;
+    }
+    .srp-dealermap {
+        width: 76%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    div#map {
+        margin-top: 0;
+    }
+    .dealerimg {
+        width: 30%; 
+    }
+    .srp-dealerslist-cont {
+        width: 50%;
+        border: 0;
+    }
+    .srp-dealermap {
+        width: 50%;
+    }
+    div.container-venta h2.section-heading{
+        font-size: 70px;
+    }
+    ul.srp-dealerlist{
+        margin: 0 30px;
+        margin-left: 0;
+        /* padding-left: 0; */
+    }
+    div.contenedor.venta{
+        margin-bottom: 2%;
+    }
+    .srp-dealers-innerrow.inputs-cont {
+        padding: 40px 80px;
+    }
+    .dealers p.input-wrapper input {
+        height: 36px;
+        padding: 0 10px;
+    }
+    .dealer-search::after {
+        width: 20px;
+        height: 20px;
+    }
+    .dealers p.input-wrapper {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .srp-dealers-innerrow {
+        padding: 40px 0 0 !important;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
